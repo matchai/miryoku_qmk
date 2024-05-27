@@ -1,0 +1,11 @@
+name: 'Build Moonlander MacOS'
+on:
+  - workflow_dispatch
+jobs:
+  build:
+    uses: ./.github/workflows/main.yml
+    with:
+        keyboard: '["moonlander"]'
+        alphas: '["qwerty"]'
+        clipboard: '["mac"]'
+        nav: '["vi"]'
